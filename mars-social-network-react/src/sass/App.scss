@@ -1,0 +1,31 @@
+//General
+@import'./General/Reset';
+@import './General/Variables';
+@import './General/Mixin';
+@import './General/Grid';
+@import './General/Font';
+@import './General/Base';
+
+//Common
+@import './Common/loader';
+
+//WelcomePage
+@import'./WelcomePage/WelcomePage';
+@import'./LoginPage';
+
+//Sections
+@import './General/Header';
+@import './General/Navbar';
+
+//Profile Page
+@import './ProfilePage/ProfilePage';
+@import './ProfilePage/UserProfilCard';
+@import './ProfilePage/UserAddPost';
+@import './ProfilePage/UserSharePosts';
+
+//Messages Page
+@import './MessagesPage/MessagesPage';
+
+//Freinds Page
+@import './FreindsPage//FreindsPage'
+

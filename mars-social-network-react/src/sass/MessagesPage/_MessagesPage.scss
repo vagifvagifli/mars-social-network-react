@@ -1,0 +1,139 @@
+.content-messages{
+    display: flex;
+    width: 100%;
+    height: auto;
+    
+    //User Column Page
+    &__users{
+        width: 23%;
+        overflow-y: scroll;
+        padding: 3rem;
+        background-color: rgba(29, 135, 177, 0.555) !important;
+        height: 60rem;
+        border-right:.1rem solid rgba(36, 1, 39, 0.116);
+        display: flex;
+        box-shadow: .5rem 1rem 1rem rgba(0, 0, 0, 0.384);
+        align-items: center;
+        flex-direction: column;
+        justify-content:center;
+
+
+        a{  
+            padding: 1rem 0;
+            width: 70%;
+            text-transform: capitalize;
+            text-decoration: none;
+            font-size: 1.9rem;
+            letter-spacing:.1rem;
+            margin-top:1rem ;
+            color: rgb(238, 238, 238);
+            text-align: left;
+            list-style: circle;
+
+            &:not(:last-child){
+                border-bottom:.1rem solid rgba(255, 255, 255, 0.644) ;
+            }
+            &:not(:first-child){
+                border-bottom:.1rem solid rgba(255, 255, 255, 0.644) ;
+            }
+            &:hover{
+                color: rgb(5, 151, 161);
+            }
+        }
+    }
+
+    //Message Column Page
+    &__message{
+        width: 77%;
+        padding: 3rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__content{
+            width:80%;
+            display: flex;
+            padding: 4rem;
+            box-shadow: 0 .1rem 2rem rgba(0, 0, 0, 0.555);
+            background-color:rgb(118, 126, 141);
+            flex-direction: column;
+            align-items: center;
+            overflow-y: scroll ;
+            margin: 2rem 0;
+            height: 50rem;
+            &__group{
+                width: 80%;
+                border-radius: 4rem;
+                background-color: rgb(216, 222, 233);
+                padding-bottom: 2.2rem;
+                margin: 1rem 0;
+             
+                display: flex;
+                align-items: center;
+                padding: 1rem;
+                &:not(:last-child){
+                    border-bottom:.1rem solid rgba(68, 4, 68, 0.178) ;
+                }
+
+                &:hover{
+                    background-color: rgba(209, 211, 212, 0.363);
+                }
+                img{
+                    width: 6rem;
+                    height: 6rem;
+                    margin-right:1.5rem ;
+                    border-radius:50% ;
+                    box-shadow: 0 .1rem 2rem rgba(0, 0, 0, 0.404);
+                }
+
+                &__answer{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    font-size: 1.7rem;
+                   
+
+                    span{
+                        font-size: 1.4rem;
+                        margin-top:1rem ;
+                        color: rgb(255, 255, 255);
+                    }
+                }
+            }
+        }
+        
+    
+    }
+}
+
+
+.begin-messages{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 88rem;
+   
+
+
+    p{
+        letter-spacing: .3rem;
+        text-align: center;
+        line-height: 1.4;
+        color:rgb(255, 255, 255);
+        font-size: 4rem;
+        animation: tween-color 15s linear 5s infinite alternate;
+    }
+
+}
+
+@keyframes tween-color {
+    from {
+      transform: scale(1.02);;
+    }
+
+    to{
+
+        transform: scale(1.5);
+    }
+}
